@@ -1,0 +1,7 @@
+snscrape.modules.twitter
+pandas
+warnings
+itertools
+praw
+wordcloud
+matplotlib
