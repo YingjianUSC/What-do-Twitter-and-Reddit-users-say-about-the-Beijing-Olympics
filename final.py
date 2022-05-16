@@ -44,12 +44,13 @@ def get_second_dataset():
     return df
 
 # Scrape all comments from Reddit as dataset3
+# You need to get your own user agent
 import praw
 import pandas as pd
 def get_third_dataset():
-    reddit_read_only = praw.Reddit(client_id="PlE2KRbFbJuh7abkxcL-0w",     
-                                   client_secret="QZ0JWkWBlfyCbhpGYaZ7EBXgo805FQ", 
-                                   user_agent="ChloeZhang")        # your user agent
+    reddit_read_only = praw.Reddit(client_id="replace your client_id here",     
+                                   client_secret="replace your client_secret here", 
+                                   user_agent="replace your user_agent here")        
     # URL of the post
     url = "https://www.reddit.com/r/AskAnAmerican/comments/m5yj40/would_you_support_a_boycott_of_the_2022_beijing/"
     # Creating a submission object
@@ -138,7 +139,4 @@ if __name__ == "__main__":
         
     else:
         print("The arguments do not match the requirements. Please refer README.md for understanding the requirements")
-
-
-
 
